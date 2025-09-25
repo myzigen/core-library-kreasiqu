@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="library_name">core-library-kreasiqu</string>
+    <string name="title_positive_btn">Simpan</string>
+    <string name="title_negative_btn">Batal</string>
+
+</resources>

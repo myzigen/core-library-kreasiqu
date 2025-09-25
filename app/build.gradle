@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 34
+    namespace "core.library.kreasiqu"
+		
+    defaultConfig {
+	    applicationId "core.library.kreasiqu"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+	
+	buildFeatures {
+        viewBinding true
+        buildConfig true
+    	}
+}
+
+dependencies {
+	api 'androidx.appcompat:appcompat:1.7.0-alpha03'
+    api 'com.google.android.material:material:1.12.0-alpha03'
+	api 'androidx.annotation:annotation:1.8.0-alpha01'
+	api 'com.squareup.okio:okio:3.15.0'
+
+  
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
