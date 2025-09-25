@@ -35,10 +35,10 @@ dependencies {
 	implementation 'com.squareup.okio:okio:3.15.0'
 	
 	 // Retrofit
-    implementation 'com.squareup.retrofit3:retrofit:3.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:3.0.0'
 
     // Gson converter untuk Retrofit
-    implementation 'com.squareup.retrofit3:converter-gson:2.11.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
     
     // OkHttp
     implementation 'com.squareup.okhttp3:okhttp:4.12.0'
