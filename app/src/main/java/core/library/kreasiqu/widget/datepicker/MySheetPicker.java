@@ -13,8 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import core.library.kreasiqu.util.WindowPreferencesManager;
 import core.library.kreasiqu.R;
+import core.library.kreasiqu.util.WindowPreferencesManager;
 
 public class MySheetPicker extends BottomSheetDialogFragment {
   private OnDatePickedListener listener;
@@ -86,7 +86,7 @@ public class MySheetPicker extends BottomSheetDialogFragment {
               bottomSheetDialog.findViewById(com.google.android.material.R.id.design_bottom_sheet);
 
           if (bottomSheet != null) {
-            bottomSheet.setBackgroundResource(core.library.kreasiqu.R.drawable.shape_corners_top);
+            bottomSheet.setBackgroundResource(R.drawable.shape_corners_top);
             // Pasang insets setelah BottomSheet siap
 
             View root = bottomSheet; // atau binding.getRoot()

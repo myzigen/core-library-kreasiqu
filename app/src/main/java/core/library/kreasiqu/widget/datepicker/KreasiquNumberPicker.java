@@ -32,6 +32,7 @@ public class KreasiquNumberPicker extends NumberPicker {
   public void addView(View child, int index, android.view.ViewGroup.LayoutParams params) {
     super.addView(child, index, params);
     updateView(child);
+
   }
 
   @Override
