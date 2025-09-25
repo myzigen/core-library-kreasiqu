@@ -14,6 +14,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import core.library.kreasiqu.util.WindowPreferencesManager;
+import core.library.kreasiqu.R;
 
 public class MySheetPicker extends BottomSheetDialogFragment {
   private OnDatePickedListener listener;
@@ -31,9 +32,7 @@ public class MySheetPicker extends BottomSheetDialogFragment {
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle arg2) {
-    View view =
-        inflater.inflate(
-            core.library.kreasiqu.R.layout.kreasiku_sheet_date_picker, container, false);
+    View view = inflater.inflate(R.layout.kreasiku_sheet_date_picker, container, false);
 
     return view;
   }
@@ -41,9 +40,9 @@ public class MySheetPicker extends BottomSheetDialogFragment {
   @Override
   public void onViewCreated(View view, Bundle arg1) {
     super.onViewCreated(view, arg1);
-    btnConfirm = view.findViewById(core.library.kreasiqu.R.id.confirmBtn);
-    btnCancel = view.findViewById(core.library.kreasiqu.R.id.cancelBtn);
-    picker = view.findViewById(core.library.kreasiqu.R.id.datePicker);
+    btnConfirm = view.findViewById(R.id.confirmBtn);
+    btnCancel = view.findViewById(R.id.cancelBtn);
+    picker = view.findViewById(R.id.datePicker);
 
     btnCancel.setOnClickListener(v -> dismiss());
 
