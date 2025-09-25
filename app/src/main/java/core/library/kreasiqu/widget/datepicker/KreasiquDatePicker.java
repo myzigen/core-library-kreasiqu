@@ -15,6 +15,7 @@ import java.text.DateFormatSymbols;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Locale;
+import core.library.kreasiqu.R;
 
 public class KreasiquDatePicker extends LinearLayout {
   private KreasiquNumberPicker yearNumberPicker;
@@ -46,15 +47,15 @@ public class KreasiquDatePicker extends LinearLayout {
 
   private void init(Context context, AttributeSet attrs) {
     // ----- inflate view
-    View view = LayoutInflater.from(context).inflate(core.library.kreasiqu.R.layout.widget_date_picker, this, true);
+    View view = LayoutInflater.from(context).inflate(R.layout.widget_date_picker, this, true);
 
-    dateTv = view.findViewById(core.library.kreasiqu.R.id.showDateTv);
-    monthTv = view.findViewById(core.library.kreasiqu.R.id.showMonthTv);
-    yearTv = view.findViewById(core.library.kreasiqu.R.id.showYearTv);
+    dateTv = view.findViewById(R.id.showDateTv);
+    monthTv = view.findViewById(R.id.showMonthTv);
+    yearTv = view.findViewById(R.id.showYearTv);
 
-    yearNumberPicker = view.findViewById(core.library.kreasiqu.R.id.yearNumberPicker);
-    monthNumberPicker = view.findViewById(core.library.kreasiqu.R.id.monthNumberPicker);
-    dayNumberPicker = view.findViewById(core.library.kreasiqu.R.id.dayNumberPicker);
+    yearNumberPicker = view.findViewById(R.id.yearNumberPicker);
+    monthNumberPicker = view.findViewById(R.id.monthNumberPicker);
+    dayNumberPicker = view.findViewById(R.id.dayNumberPicker);
 
     updateViewData();
   }
